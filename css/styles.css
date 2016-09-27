@@ -1,69 +1,71 @@
-/* Preloader */
 
-#preloader {
-	position: fixed;
-	top:0;
-	left:0;
-	right:0;
-	bottom:0;
-	background-color:#fff; /* change if the mask should have another color then white */
-	z-index:99999; /* makes sure it stays on top */
+/*
+Template Name: JGM Portfolio
+Author: Jason Maddle
+Author URI: http://itsallupo.github.io
+Description: My github.io Portfolio page
+Version: 1.0
+*/
+
+body,html{
+
+}
+body{
+
+}
+h1,h2,h3,h4,h5,h6{
+
 }
 
-.loader {
-	font-size: 10px;
-	top: 300px;
-	left: 45%;
-	text-indent: -9999em;
-	width: 11em;
-	height: 11em;
-	border-radius: 50%;
-	position: relative;
-	-webkit-animation: load3 1.4s infinite linear;
-	animation: load3 1.4s infinite linear;
-	-webkit-transform: translateZ(0);
-	-ms-transform: translateZ(0);
-	transform: translateZ(0);
+/* HEADER */
+
+#header {
+  float: left;
+  display: inline;
+  width: 100%;
 }
-.loader:before {
-	width: 50%;
-	height: 50%;
-	border-radius: 100% 0 0 0;
-	position: absolute;
-	top: 0;
-	left: 0;
-	content: '';
+
+.header-inner {
+  display: inline;
+  position: relative;
+  float: left;
+  width: 100%;
 }
-.loader:after {
-	background: #fff;
-	width: 75%;
-	height: 75%;
-	border-radius: 50%;
-	content: '';
-	margin: auto;
-	position: absolute;
-	top: 0;
-	left: 0;
-	bottom: 0;
-	right: 0;
+
+.header-inner>img {
+  width: 100%;
 }
-@-webkit-keyframes load3 {
-  0% {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-  100% {
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
-  }
+
+.header-overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 10;
 }
-@keyframes load3 {
-  0% {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-  100% {
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
-  }
+
+.header-content {
+  float: left;
+  height: 100%;
+  padding: 12% 140px 140px;
+  text-align: center;
+  width: 100%;
 }
+
+.header-content h2 {
+  font-size: 70px;
+  text-transform: uppercase;
+  line-height: 70px;
+}
+
+h2.header-text {
+  color: #fff;
+}
+
+h3.header-subtext {
+
+}
+
+/* END HEADER */
