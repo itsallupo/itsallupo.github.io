@@ -6,34 +6,39 @@ Author URI: http://itsallupo.github.io
 Description: My github.io Portfolio page
 Version: 1.0
 */
+@font-face {
+  font-family: HKGrotesk-Regular;
+  src: url(../fonts/HKGrotesk-Regular.otf)
+}
 
 body,html{
-
+  margin: 0;
+  padding: 0;
+  height: 100%;
 }
 body{
 
 }
 h1,h2,h3,h4,h5,h6{
-
+  font-family: HKGrotesk-Regular;
 }
 
 /* HEADER */
 
 #header {
-  float: left;
-  display: inline;
+  font-family: HKGrotesk-Regular;
+  display: table;
+  height: 100%;
   width: 100%;
+  margin: auto;
+
+  background:url('../images/header-bg.jpg') no-repeat 50% 50%;
+  background-size: cover;
+
 }
 
 .header-inner {
-  display: inline;
-  position: relative;
-  float: left;
-  width: 100%;
-}
 
-.header-inner>img {
-  width: 100%;
 }
 
 .header-overlay {
@@ -68,4 +73,80 @@ h3.header-subtext {
 
 }
 
-/* END HEADER */
+/**************/
+/*** NAVBAR ***/
+/**************/
+
+.navbar-nav {
+  width: 100%;
+  text-align: center;
+}
+
+.navbar-nav li {
+  float: none;
+  display: inline-block;
+}
+
+.navbar {
+  -webkit-box-shadow: 8px 7px 18px 0px rgba(4,21,0,0.51);
+  -moz-box-shadow: 8px 7px 18px 0px rgba(4,21,0,0.51);
+  box-shadow: 8px 7px 18px 0px rgba(4,21,0,0.51);
+}
+/********************/
+/***** #ABOUT *******/
+/********************/
+
+#about {
+
+}
+
+.about-area {
+
+}
+
+.about-header {
+  text-align: center;
+}
+
+hr.about-seperator {
+
+}
+
+/**** #PORTFOLIO ****/
+/********************/
+
+#portfolio {
+
+}
+
+
+/**** #BLOG-POSTS ****/
+/*********************/
+
+#blog-posts {
+
+}
+
+
+/**** #CONTACT ****/
+/******************/
+
+#contact {
+
+}
+
+
+/**** #FOOTER ****/
+/*****************/
+
+#footer {
+  background-color: #041500;
+  color: #E6F3E3;
+  text-align: center;
+  width: 100%;
+
+}
+
+.footer-top {
+
+}
