@@ -21,6 +21,7 @@ body{
 }
 h1,h2,h3,h4,h5,h6{
   font-family: HKGrotesk-Regular;
+  color: #041500;
 }
 
 /* HEADER */
@@ -60,19 +61,32 @@ h1,h2,h3,h4,h5,h6{
 }
 
 .header-content h2 {
-  font-size: 70px;
-  text-transform: uppercase;
-  line-height: 70px;
+  color: #E6F3E3;
+  font-size: 65px;
+  line-height: 65px;
 }
 
-h2.header-text {
-  color: #fff;
+#header-slide {
+  position: absolute;
+  top: -1500px;
+  left: 0px
 }
 
-h3.header-subtext {
+.header-container {
+  /*background: rgba(230, 243, 227, .3);*/
 
+  color: #041500;
+  margin-right: 515px;
+  height: 400px;
+  width: 600px;
+  float: right;
 }
 
+.header-container img {
+  border: 2px solid #E6F3E3;
+  border-radius: 5px;
+  margin-top: 10px;
+}
 /**************/
 /*** NAVBAR ***/
 /**************/
@@ -85,6 +99,13 @@ h3.header-subtext {
 .navbar-nav li {
   float: none;
   display: inline-block;
+}
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  color: #555;
+  background-color: #E6F3E3;
 }
 
 .navbar {
@@ -142,6 +163,7 @@ hr.about-seperator {
 #footer {
   background-color: #041500;
   color: #E6F3E3;
+  opacity: 50;
   text-align: center;
   width: 100%;
 
